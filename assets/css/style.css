@@ -23,10 +23,10 @@
 html {
   user-select: none;
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 
 body {
+  overflow-x: hidden !important;
   position: relative;
   background-color: var(--bg-color);
   width: 100%;
