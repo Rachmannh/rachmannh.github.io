@@ -27,8 +27,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  font-family: "Classica", sans-serif;
+  background-color: var(--bg-color) !important;
+  font-family: "Classica", sans-serif !important;
 }
 
 /* Nav */
@@ -135,7 +135,11 @@ ul li a:hover {
   }
   nav {
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0.3rem 0 !important;
+    background-color: black;
   }
   nav ul {
     position: absolute;
