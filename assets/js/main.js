@@ -9,3 +9,9 @@ function scrollValue() {
 }
 
 window.addEventListener("scroll", scrollValue);
+
+const clickx = document.getElementById("pencet");
+
+clickx.addEventListener("click", function () {
+  clickx.classList.toggle("Diam");
+});
