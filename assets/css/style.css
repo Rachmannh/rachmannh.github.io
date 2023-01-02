@@ -38,7 +38,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 1.5rem 4rem !important;
+  padding: 0.3rem 4rem !important;
   background-color: black;
 }
 
@@ -133,6 +133,10 @@ ul li a:hover {
     display: flex;
     justify-content: space-between;
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
   nav ul {
     position: absolute;
     top: 0;
@@ -146,6 +150,9 @@ ul li a:hover {
     background-color: black;
     transform: translateX(-100%);
     transition: all 1s;
+  }
+  nav ul li a {
+    font-size: 2rem;
   }
 
   nav ul.slide {
