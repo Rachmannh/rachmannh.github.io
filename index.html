@@ -21,32 +21,77 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <div class="logo">
-        <a href="">
-          <img class="my-logo-img" src="./assets/img/logo.png" alt="My Logo" />
+    <nav
+      class="navbar navbar-dark bg-custom sticky-top"
+      id="navbar"
+      aria-label="Dark offcanvas navbar">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img class="my-logo" src="./assets/img/logo.png" alt="My Logo" />
         </a>
-      </div>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Works</a>
-        </li>
-      </ul>
-
-      <div class="burger-menu">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbarDark"
+          aria-controls="offcanvasNavbarDark">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbarDark"
+          aria-labelledby="offcanvasNavbarDarkLabel">
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section id="myHero">
+      <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+          <h1 class="hero-title">Rachman Nul Hakim</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="hero-sub-title">Front End Developer | Freelancer</p>
+          </div>
+          <div class="social-media col-lg-6 mx-auto">
+            <a href="https://www.instagram.com/rachmannh/" target="_blank">
+              <ion-icon name="logo-instagram" size="large"></ion-icon>
+            </a>
+            <a href="https://twitter.com/Rachmannulhakim" target="_blank">
+              <ion-icon name="logo-twitter" size="large"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rachman-nul-hakim-/"
+              target="_blank">
+              <ion-icon name="logo-linkedin" size="large"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
 
     <!-- My JS -->
     <script src="./assets/js/main.js"></script>
@@ -55,5 +100,12 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
