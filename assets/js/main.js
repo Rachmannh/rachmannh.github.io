@@ -1,3 +1,12 @@
+// Navigation
+const burgerToggle = document.querySelector(".burger-menu input");
+const nav = document.querySelector("nav ul");
+
+burgerToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
+});
+
+// Change Navbar BG Color on Hover
 function scrollValue() {
   var navbar = document.getElementById("navbar");
   var scroll = window.scrollY;
@@ -9,9 +18,3 @@ function scrollValue() {
 }
 
 window.addEventListener("scroll", scrollValue);
-
-const clickx = document.getElementById("pencet");
-
-clickx.addEventListener("click", function () {
-  clickx.classList.toggle("Diam");
-});
