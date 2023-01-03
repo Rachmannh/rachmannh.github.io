@@ -51,6 +51,10 @@ nav {
   height: 3rem;
 }
 
+.logo img:hover {
+  transition: all 0.6s ease-in;
+}
+
 ul {
   position: absolute;
   display: flex;
