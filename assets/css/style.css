@@ -189,10 +189,6 @@ button:active:focus {
 
 /* Hero Section */
 
-#myHero {
-  margin: 6rem 0;
-}
-
 .hero-title {
   font-size: 6rem;
   font-weight: 600;
