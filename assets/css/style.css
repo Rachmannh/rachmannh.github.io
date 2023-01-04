@@ -90,15 +90,9 @@ button:active:focus {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar-nav {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .nav-link {
-    margin: 2rem 0 2rem 0;
-    font-size: 5rem !important;
+    margin-top: 3rem;
+    font-size: 4rem !important;
   }
 }
 
