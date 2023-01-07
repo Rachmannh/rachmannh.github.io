@@ -33,6 +33,48 @@ body {
   height: auto;
 }
 
+body::after {
+  content: "";
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/gifnoise.gif);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  opacity: 0.06;
+  will-change: auto;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--button-color);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--button-hover-color);
+}
+
+/* Scroll Bar End */
+
 /* Nav */
 
 .navbar,
@@ -101,63 +143,29 @@ button:active:focus {
 /* Hero Section */
 
 #myHero {
-  margin: 8rem 0 0 0;
-}
-
-.hero-title {
-  font-size: 6.2rem;
-  font-weight: 600;
-  line-height: 8rem;
   color: var(--headline-color);
 }
 
-.hero-sub-title {
-  font-size: 1.9rem;
-  font-weight: 400;
-  line-height: 3rem;
-  color: var(--paragraph-color);
+.hero-illustration {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.hero-image {
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  max-width: 28rem;
+  max-height: 28rem;
+  animation: float-1 4s ease-in-out infinite;
 }
 
-.social-media a {
-  margin: 1rem 1rem;
-  text-decoration: none;
-  color: var(--headline-color);
-}
-
-.social-media a:hover {
-  transition: all 0.6s;
+.greeting {
   color: var(--button-color);
 }
 
-ion-icon {
-  font-size: 34px;
-}
-
-@media screen and (max-width: 600px) {
-  #myHero {
-    margin: -3rem 0;
-  }
-  .hero-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2rem;
-    color: var(--headline-color);
-  }
-  .hero-sub-title {
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 2rem;
-    color: var(--paragraph-color);
-  }
-  ion-icon {
-    font-size: 24px;
-  }
+.hero-title {
+  color: var(--headline-color);
 }
 
 /* Hero Section End */
