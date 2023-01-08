@@ -43,8 +43,8 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 999;
-  opacity: 0.06;
+  z-index: 2;
+  opacity: 0.03;
   will-change: auto;
   transform: translate3d(0, 0, 0);
   pointer-events: none;
@@ -81,19 +81,12 @@ body::after {
 .navbar-expand-lg {
   width: 100%;
   height: auto;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
-.navbar-brand {
+.navbar-brand img {
   width: 3rem;
   height: 3rem;
-  background-image: url("../img//logo.png") !important;
-  background-position: center;
-  background-size: cover;
-}
-
-.navbar-brand:hover {
-  background-image: url("../img/logo-hover.png") !important;
 }
 
 .nav-item {
@@ -161,6 +154,9 @@ button:active:focus {
 }
 
 .greeting {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
   color: var(--button-color);
 }
 
